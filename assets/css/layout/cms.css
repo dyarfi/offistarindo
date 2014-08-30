@@ -1,0 +1,52 @@
+/**
+  * Remake css style liquid 2 column layout
+  * Author Matthew James Taylor
+  * http://matthewjamestaylor.com/blog/ultimate-2-column-left-menu-pixels.htm
+**/
+
+.liquid_column_mask {
+	position        : relative;		/* This fixes the IE7 overflow hidden bug and stops the layout jumping out of place */
+    clear           : both;
+    float           : left;
+    width           : 100%;			/* width of whole page */
+	overflow        : hidden;	    /* This chops off any overhanging divs */
+}
+
+/* 2 column left column settings */
+.liquid_left_column {   
+    background      : #252525;
+}
+
+.liquid_left_column .liquid_right_column {
+    float           : left;
+    width           : 200%;
+	position        : relative;
+	left            : 255px; 
+    background      : #fff;
+}
+
+.liquid_left_column .liquid_column_wrap {
+    float           : right;
+    width           : 50%;
+    position        : relative;
+    right           : 255px;
+    padding-bottom  : 1em;  
+}
+
+.liquid_left_column .liquid_content_right {
+    margin          : 0 10px 0 270px;
+    position        : relative;
+    right           : 100%;
+    overflow        : hidden;
+    text-align      : justify;
+    padding         : 10px 0;
+}
+
+.liquid_left_column .liquid_content_left {
+    float           : left;
+    width           : 243px; 
+    position        : relative;
+    right           : 249px;
+    padding         : 10px 0;  
+    color           : #fff;
+}

@@ -1,0 +1,1 @@
+<div id="middle" class="column container-fluid">    <div class="outerwrapper">      <div class="container-fluid">		  <div class="search-container">			<?php echo $data_search;?>		  </div>	  </div>	</div></div>	

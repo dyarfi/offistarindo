@@ -1,0 +1,225 @@
+/** 
+    ** CSS Body Styling 
+    ** Decorated By Daniel Simangunsong
+**/
+html { height: 100%; }
+body {
+    font-family: calibri; color: #404556; line-height:18px; font-size:12px; height: 100%;
+    background-color: #eeeeee; 
+}
+body#login { background-color: #eeeeee;  }
+body#login #main_body_container { width: 100%; overflow: hidden;}
+fieldset { border:1px solid #939292; padding: 10px;}
+.wrapper { margin: 0; }
+#main_body_container {
+    background:transparent url(../images/admin/background-container.png) top left repeat-y; padding-bottom:100px; 
+    overflow: auto; width:100%; overflow-x: auto;
+}
+.tw_cl { width: 25%; }
+.tw_cr { width: 75%; background:#fff;}
+#header {
+    background-color: #eeeeee; height: 160px;
+    border-bottom: 1px solid #dadada;  
+}
+body#login #header { border:none; }
+#head_repeater {
+    background: transparent url('../images/admin/background.jpg') top center repeat-x; height: 100%;
+}
+#single_header {
+    background: transparent url('../images/admin/header.jpg') top center no-repeat;
+    height: 160px;  margin: 0 auto; 
+}
+.logo_webarq {
+    background: transparent url('../images/admin/webarq_logo.png') top left no-repeat;
+    line-height: 18px; padding-left: 55px; width: 150px;
+    float:right; color:#979799
+}
+.fixed_login { position:fixed; top:130px; }
+.login_container { 
+    background-color : #01365e;
+    width: 310px; 
+    margin:20px auto;
+    top:30px;
+    padding: 20px; 
+    color: #fff;
+    border:1px solid #cdcdcd;    
+}
+/** Listing **/
+.bar { background-color:#2398be; height: 5px; margin-right:10px;}
+.listing_data { clear: both; border-collapse:separate; border-spacing: 4px; margin-left: -4px; width: 100%; }
+.listing_data thead tr th { 
+    padding			: 10px;
+    border			: #c3c4c4;
+    background      : #c5c6c6 url('../images/admin/t_head.jpg') top left repeat-x;
+}
+.listing_data tbody tr td {
+    vertical-align	: top;
+    padding: 4px;
+}
+.listing_data thead tr th.checkall { padding-top:2px; }
+.no_data { border:1px solid #2fc6d4; padding: 3px;}
+.listing_data .listing_genap { background : #d5f6ff; }
+.listing_data .listing_ganjil { background : #fafafa; }
+.listing_data .listing_merah { background : #ffd5d5;}
+.listing_data .listing_hijau { background : #d5ffd5;}
+.listing_data .listing_marun { background : #fff7cd;}
+.record_short_desc { width: 285px; }
+.record_title { width: 90px;}
+.cd_left { width: 200px; float:left;} 
+.cd_center { width: 15px; float:left;}
+.cd_right { margin-left: 10px; float:left; width: 460px;}
+.listing_data tfoot tr td {
+	border			: #c3c4c4;
+	background		: #c5c6c6 url(../images/admin/tfoot.jpg) top left repeat-x;
+	/*border-top		: 1px solid #e2e2e2;
+	border-bottom	: 1px solid #808080;
+	border-left		: 1px solid #e2e2e2;
+	border-right	: 1px solid #808080;*/
+	vertical-align	: middle;
+	height			: 26px;
+}
+.listing_data tfoot tr td#corner {
+	text-align		: center;
+}
+#selection_action { float: left; padding-left: 10px; color: #000;}
+#selection_page { float: right; padding: 2px 10px;}
+#selection_page a { color: #000;}
+#single_footer{ 
+    background-color: #012f51; position: fixed; bottom: 0px; height: 100px; color:#fff; font-size:12px;
+    width: 100%;
+}
+ul.tab { }
+ul.tab li { float: left; background: transparent url('../images/admin/tab_bar.png') top left; width: 100px; line-height: 54px; text-align:center; font-weight: bold; cursor: pointer;}
+ul.tab li#active { background: transparent url('../images/admin/tab_bar_active.png') top left; color: #fff; cursor: auto;}
+#content_viewer_container { width: 790px; overflow: hidden;}
+#content_viewer_container_box { width: 1580px; }
+#content_viewer_container_box.english { margin-left: -790px; }
+th.function { min-width: 72px; }
+th.function_content { width: 100px; }
+/** Link **/
+a { text-decoration: none; color:#404556;font-size:12px; cursor: pointer; }
+a.logout {
+    font-weight: bold; line-height: 14px; display: block; float:right; color:#404556;
+    padding-left: 17px; margin-top:3px;
+    background: transparent url('../images/system/power.png') top left no-repeat; margin-left:10px;
+}
+a.logout:hover {
+    background-position: 0% 100%;color: #dcdcdc;
+}
+#side_navigation { margin: 0 auto; width:226px;}
+ul.main_navi { }
+ul.main_navi li { margin:5px 0;  }
+ul.main_navi li.separator { background: none; height: 4px; }
+ul.main_navi li a {
+    background: transparent url('../images/admin/menu.png') top left no-repeat; 
+    line-height: 34px; 
+    font-weight: bolder;
+    display: block; padding-left: 25px; 
+    font-size: 14px; 
+    text-transform: none; 
+    color: #fff;  
+    cursor: pointer;
+    padding-top:1px;
+    white-space: nowrap;
+}
+ul.main_navi li#nexthide a {
+    background-position: 0% 33%;
+}
+ul.main_navi li ul { display: none; }
+ul.main_navi li#nexthide ul { display: block; }
+ul.main_navi li#nexthide li a {
+    background-position: 0 67%; color:#727171;
+}
+ul.main_navi li#nexthide li a:hover,ul.main_navi li#nexthide li a#active {
+    background-position: 0 100%; color:#393838;
+}
+ul.main_navi li#nexthide li a#active { color: #fff; }
+a.view { background: transparent url('../images/admin/button_view.png') top left no-repeat;  height:20px; display: block; width: 20px; float:left;}
+a.edit { background: transparent url('../images/admin/button_edit.png') top left no-repeat;  height:20px; display: block; width: 20px; float:left; margin-left:10px;}
+a.delete { background: transparent url('../images/admin/button_delete.png') top left no-repeat;  height:20px; display: block; width: 20px; float:left; margin-left:10px;}
+a.translate { background: transparent url('../images/admin/button_translate.png') top left no-repeat;  height:20px; display: block; width: 20px; float:left; margin-left:10px;}
+a.new { background: transparent url('../images/admin/add_button.png') top left no-repeat;  height:25px; display: block; width: 80px}
+a.odr_up {
+    background: transparent url(../images/admin/arrow_up.png) no-repeat;  height:25px; display: block; width: 16px;margin-left:10px; float:left;
+}
+a.odr_down {
+    background: transparent url(../images/admin/arrow_down.png) no-repeat;  height:25px; display: block; width: 16px;margin-left:10px; float:left;
+}
+/** Heading **/
+h2 {
+	margin:0px;
+	line-height:16px;
+	color:#555555;
+}
+#side_navigation h2 { background:url(../images/admin/main_menu_icon.jpg) top left no-repeat; padding-bottom:10px; padding-left:25px;border-bottom:1px solid #d8d5d5;}
+/** Form Base **/
+input[type="text"].disactive, input[type="password"].disactive { color: #cdcdcd; }
+form.general input[type="text"], form.general input[type="password"]
+{
+    border: 1px solid #cdcdcd; line-height: 25px; width: 300px; padding:0; margin: 0;
+}
+form.general textarea{ line-height: 15px; width: 610px;}
+form.general select { height: 25px; }
+input.cke_dialog_ui_input_text { height: 18px; }
+.tab_tipe li {
+    background  : transparent url('../images/admin/tab.jpg') top center no-repeat;
+    width       : 65px;
+    height      : 31px;
+    line-height : 31px;
+    text-align  : center;
+    font-weight : bold;
+    float       : left;
+    cursor      : pointer;
+}
+.tab_tipe li#active {
+    background-position: 0 -31px;
+}
+img.border  {
+    border: 1px solid #bebebe;
+}
+input[type="file"] { border: 1px solid #dcdcdc; padding: 2px;}
+/* Defrian Yarfi add */
+.flag_holder {
+	display: inline-table;
+	padding: 2px 0 2px 0px !important;
+}
+.lang_desc a {
+	margin: 0 2px 0 2px;
+}
+.lang_desc_row img, .lang_desc_row a, .lang_desc img, .lang_desc a, .flag_holder img {
+	vertical-align: middle;
+	outline: none;
+} 
+.lang_desc_row .right_float {
+	display: inline-table;
+	float: right
+}
+.flag_holder { 
+	margin: 2px 0 0 2px;
+}
+.flag_holder img {
+	margin: 0 4px 0 4px;
+}
+.red {
+	color: #ce3006;
+}
+.va-mid-inline select {
+	vertical-align: middle;
+	margin: 0 0 0 2px;
+}
+.va-mid-inline {
+	display: inline-table;
+	margin: 0px auto;
+}
+.ckeditor p table, .form_field p table,
+.ckeditor p, .form_field p {
+	clear: both;
+	position: relative;
+	display: block
+}
+.form_field ul { 
+	margin: 0 0 0 20px;
+}
+.form_field ul li { 
+	list-style-type: disc;
+}
