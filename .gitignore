@@ -1,4 +1,4 @@
-_apps/cache/*
-_apps/logs/*
-uploads/*
+*/_apps/cache/*
+*/_apps/logs/*
+*/uploads/*
 offistar_offistarindo2014.sql
